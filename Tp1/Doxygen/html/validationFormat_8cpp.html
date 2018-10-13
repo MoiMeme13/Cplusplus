@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>My Project: validationFormat.h File Reference</title>
+<title>My Project: validationFormat.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,50 +82,56 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">validationFormat.h File Reference</div>  </div>
+<div class="title">validationFormat.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
+
+<p>Fichier contenant les fonctions de validation de fichier de stationement.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &quot;<a class="el" href="validationFormat_8h_source.html">validationFormat.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for validationFormat.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="validationFormat_8h__dep__incl.png" border="0" usemap="#validationFormat_8hdep" alt=""/></div>
-<map name="validationFormat_8hdep" id="validationFormat_8hdep">
-<area shape="rect" id="node2" href="ProgrammePrincipal_8cpp.html" title="Fichier contenant le programme principal (main) " alt="" coords="5,80,169,107"/>
-<area shape="rect" id="node3" href="validationFormat_8cpp.html" title="Fichier contenant les fonctions de validation de fichier de stationement. " alt="" coords="193,80,336,107"/>
+<div class="center"><img src="validationFormat_8cpp__incl.png" border="0" usemap="#validationFormat_8cpp" alt=""/></div>
+<map name="validationFormat_8cpp" id="validationFormat_8cpp">
+<area shape="rect" id="node6" href="validationFormat_8h.html" title="validationFormat.h" alt="" coords="366,80,495,107"/>
 </map>
 </div>
-</div>
-<p><a href="validationFormat_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a41c3a275ac2b518e7c1718ec0b2e56d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41c3a275ac2b518e7c1718ec0b2e56d5"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Util::validerLigneCVS</b> (std::string &amp;p_ligne, std::ostringstream &amp;p_parametres)</td></tr>
-<tr class="separator:a41c3a275ac2b518e7c1718ec0b2e56d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a839d076f8263b48451d7c424f0327a98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a839d076f8263b48451d7c424f0327a98"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>Util::LireLigne</b> (std::ifstream &amp;ifs)</td></tr>
-<tr class="separator:a839d076f8263b48451d7c424f0327a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a655fa515c9348f3f9a2ebe95f4f63b5f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a655fa515c9348f3f9a2ebe95f4f63b5f"></a>
-std::ifstream&#160;</td><td class="memItemRight" valign="bottom"><b>Util::OuvertureFichierLecture</b> (std::string nomFichier)</td></tr>
-<tr class="separator:a655fa515c9348f3f9a2ebe95f4f63b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae78c30f55c94abb0c3f7d3dae0e12df1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae78c30f55c94abb0c3f7d3dae0e12df1"></a>
-std::ofstream&#160;</td><td class="memItemRight" valign="bottom"><b>Util::OuvrirFichierEcriture</b> (std::string nomFichier)</td></tr>
-<tr class="separator:ae78c30f55c94abb0c3f7d3dae0e12df1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90955d3ee74aaafd59ba6711c1255c1d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90955d3ee74aaafd59ba6711c1255c1d"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>Util::ExtraireDonneesJson</b> (std::string &amp;ligneCourante)</td></tr>
-<tr class="separator:a90955d3ee74aaafd59ba6711c1255c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf64ec4d11877d70a170cba9b12a6983"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf64ec4d11877d70a170cba9b12a6983"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Util::EcrireLigneFichier</b> (std::string &amp;ligne, std::ofstream &amp;p_parametres)</td></tr>
-<tr class="separator:adf64ec4d11877d70a170cba9b12a6983"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50765a86d4e309204f089c990552f870"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a50765a86d4e309204f089c990552f870"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Util::valideStationnemementGEOJSON</b> (std::string &amp;p_enregistrement, std::ostringstream &amp;p_attributs)</td></tr>
-<tr class="separator:a50765a86d4e309204f089c990552f870"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a962c0582b54dd366a47bac0d8563b7dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a962c0582b54dd366a47bac0d8563b7dd"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>Util::validerPointCardinal</b> (const std::string &amp;p_cardinalite)</td></tr>
 <tr class="separator:a962c0582b54dd366a47bac0d8563b7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41c3a275ac2b518e7c1718ec0b2e56d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41c3a275ac2b518e7c1718ec0b2e56d5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Util::validerLigneCVS</b> (std::string &amp;p_ligne, std::ostringstream &amp;p_parametres)</td></tr>
+<tr class="separator:a41c3a275ac2b518e7c1718ec0b2e56d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cebe0368ba7e6626b52f4a1c6abfb3e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6cebe0368ba7e6626b52f4a1c6abfb3e"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>Util::LireLigne</b> (ifstream &amp;ifs)</td></tr>
+<tr class="separator:a6cebe0368ba7e6626b52f4a1c6abfb3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e181553537a739e93ce71659535fe1f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e181553537a739e93ce71659535fe1f"></a>
+ifstream&#160;</td><td class="memItemRight" valign="bottom"><b>Util::OuvertureFichierLecture</b> (string nomFichier)</td></tr>
+<tr class="separator:a4e181553537a739e93ce71659535fe1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab29a001c141f1d7f639579b8e381f0e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab29a001c141f1d7f639579b8e381f0e2"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>Util::convertirChaineEnDouble</b> (std::string &amp;p_chaine)</td></tr>
+<tr class="separator:ab29a001c141f1d7f639579b8e381f0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d1aa04346437983dd97674bcae814f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a98d1aa04346437983dd97674bcae814f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Util::validerGeom</b> (const std::string &amp;p_geom)</td></tr>
+<tr class="separator:a98d1aa04346437983dd97674bcae814f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50765a86d4e309204f089c990552f870"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a50765a86d4e309204f089c990552f870"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Util::valideStationnemementGEOJSON</b> (std::string &amp;p_enregistrement, std::ostringstream &amp;p_attributs)</td></tr>
+<tr class="separator:a50765a86d4e309204f089c990552f870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8a7ed3cd274bc7d2f386e0e863f79be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8a7ed3cd274bc7d2f386e0e863f79be"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Util::validationAvanceGeoJSON</b> (std::string &amp;p_enregistrement)</td></tr>
+<tr class="separator:ac8a7ed3cd274bc7d2f386e0e863f79be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section date"><dt>Date</dt><dd>2018-10-11 </dd></dl>
+<div class="textblock"><p>Fichier contenant les fonctions de validation de fichier de stationement. </p>
+<dl class="section date"><dt>Date</dt><dd>2018-10-11 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Maime Lamontagne </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->

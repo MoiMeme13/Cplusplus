@@ -19,6 +19,7 @@ void EcrireLigneFichier(std::string& ligne, std::ofstream& p_parametres);
 bool valideStationnemementGEOJSON(std::string& p_enregistrement,
 		std::ostringstream& p_attributs);
 bool validerPointCardinal(const std::string& p_cardinalite);
+double convertirChaineEnDouble(std::string& p_chaine);
 
 }
 #endif /* VALIDATIONFORMAT_H_ */
