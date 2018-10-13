@@ -13,6 +13,7 @@
 
 using namespace std;
 
+
 namespace Util {
 
 /**
@@ -133,6 +134,44 @@ double convertirChaineEnDouble(std::string& p_chaine) {
 	}
 	istringstream is(p_chaine);
 	double chaineConvertiEnDouble;
+	is >> chaineConvertiEnDouble;
+	return chaineConvertiEnDouble;
+}
+
+/**
+ * \fn: convertirChaineEnInt
+ * \brief: "Convertir un chaine en int"
+ * \param[in] std::string&
+ * \return int
+ */
+int convertirChaineEnInt(std::string& p_chaine) {
+	//on remplace la , en .
+	for (unsigned int i = 0; i < p_chaine.length(); i++) {
+		if (p_chaine[i] == ',') {
+			p_chaine[i] = '.';
+		}
+	}
+	istringstream is(p_chaine);
+	int chaineConvertiEnDouble;
+	is >> chaineConvertiEnDouble;
+	return chaineConvertiEnDouble;
+}
+
+/**
+ * \fn: convertirChaineEnfloat
+ * \brief: "Convertir un chaine en float"
+ * \param[in] std::string&
+ * \return float
+ */
+float convertirChaineEnfloat(std::string& p_chaine) {
+	//on remplace la , en .
+	for (unsigned int i = 0; i < p_chaine.length(); i++) {
+		if (p_chaine[i] == ',') {
+			p_chaine[i] = '.';
+		}
+	}
+	istringstream is(p_chaine);
+	float chaineConvertiEnDouble;
 	is >> chaineConvertiEnDouble;
 	return chaineConvertiEnDouble;
 }

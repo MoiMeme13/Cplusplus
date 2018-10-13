@@ -11,6 +11,7 @@
 #include <sstream>
 
 #include "validationFormat.h"
+#include "Borne.h"
 
 using namespace std;
 using namespace Util;
@@ -37,7 +38,7 @@ int main() {
 	do {
 		cout << "Donner moi la leture métrique de la borne." << endl;
 		cin >> itemEntree;
-		lectureMetrique = convertirChaineEnDouble(itemEntree);
+		lectureMetrique = convertirChaineEnfloat(itemEntree);
 
 	} while (itemEntree.empty() || lectureMetrique == 0);
 
@@ -58,7 +59,7 @@ int main() {
 	do {
 		cout << "Donner moi le segment de la rue de la borne." << endl;
 		cin >> itemEntree;
-		segmentRue = convertirChaineEnDouble(itemEntree);
+		segmentRue = convertirChaineEnInt(itemEntree);
 
 	} while (nomTopographique.empty() || segmentRue == 0);
 
