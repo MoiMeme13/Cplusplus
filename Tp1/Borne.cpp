@@ -10,7 +10,7 @@
 #include "Borne.h"
 
 /**
- * \fn: getCoteRue
+ * \fn: Borne::getCoteRue
  * \brief: "Obtenir le code de la rue"
  * \return string
  */
@@ -28,7 +28,7 @@ const std::string& Borne::getDirection() const {
 }
 
 /**
- * \fn: getLectureMetrique
+ * \fn: Borne::getLectureMetrique
  * \brief: "Obtenir la lecture métrique"
  * \return float
  */
@@ -39,7 +39,6 @@ float Borne::getLectureMetrique() const {
 /**
  * \fn: Borne::getNomTopographique
  * \brief: "Obtenir le nom topographique"
- * \param[in]
  * \return const std::string&
  */
 const std::string& Borne::getNomTopographique() const {
@@ -47,7 +46,7 @@ const std::string& Borne::getNomTopographique() const {
 }
 
 /**
- * \fn: setNomTopographique
+ * \fn: Borne::setNomTopographique
  * \brief: "Assigner le nom topographique"
  * \param[in] const std::string&
  */
@@ -56,7 +55,7 @@ void Borne::setNomTopographique(const std::string& nomTopographique) {
 }
 
 /**
- * \fn: getNumBorne
+ * \fn: Borne::getNumBorne
  * \brief: "Obtenir le numéro de la borne"
  * \return const std::string&
  */
@@ -65,7 +64,7 @@ const std::string& Borne::getNumBorne() const {
 }
 
 /**
- * \fn: getSegmentRue
+ * \fn: Borne::getSegmentRue
  * \brief: "Obtenir le segment de rue"
  * \return int
  */
@@ -73,7 +72,7 @@ int Borne::getSegmentRue() const {
 	return m_segmentRue;
 }
 /**
- * \fn: reqBorneFormate
+ * \fn: Borne::reqBorneFormate
  * \brief: "Obtenir sous le format de chaine de caractè les informations de la bornes."
  * \return std::string
  */
@@ -92,7 +91,7 @@ std::string Borne::reqBorneFormate() const {
 }
 
 /**
- * \fn: operator==
+ * \fn: Borne::operator==
  * \brief: "Regarde si deux bornes sont égales"
  * \param[in] const Borne& p_borne
  * \return bool
@@ -107,7 +106,7 @@ bool Borne::operator==(const Borne& p_borne) const {
 }
 
 /**
- * \fn: operator<<
+ * \fn: Borne::operator<<
  * \brief: "Remplacer l'opérateur de base "<<" pour une borne"
  * \param[in] ostream& p_os, const Borne& p_borne
  * \return ostream&
