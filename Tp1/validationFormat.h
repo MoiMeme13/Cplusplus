@@ -22,6 +22,5 @@ bool validerPointCardinal(const std::string& p_cardinalite);
 double convertirChaineEnDouble(std::string& p_chaine);
 int convertirChaineEnInt(std::string& p_chaine);
 float convertirChaineEnfloat(std::string& p_chaine);
-
 }
 #endif /* VALIDATIONFORMAT_H_ */
