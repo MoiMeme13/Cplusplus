@@ -26,19 +26,21 @@ bool validerPointCardinal(const std::string& p_cardinalite) {
 
 	bool valide = p_cardinalite.empty();
 
-	if (p_cardinalite.find("Nord") != string::npos)
+	if (p_cardinalite.find("Nord") != string::npos || p_cardinalite.find("nord") != string::npos)
 		if (p_cardinalite.length() == 4)
 			valide = true;
 
-	if (p_cardinalite.find("Sud") != string::npos)
+
+	if (p_cardinalite.find("Sud") != string::npos || p_cardinalite.find("sud") != string::npos)
 		if (p_cardinalite.length() == 3)
 			valide = true;
 
-	if (p_cardinalite.find("Est") != string::npos)
+
+	if (p_cardinalite.find("Est") != string::npos || p_cardinalite.find("est") != string::npos)
 		if (p_cardinalite.length() == 3)
 			valide = true;
 
-	if (p_cardinalite.find("Ouest") != string::npos)
+	if (p_cardinalite.find("Ouest") != string::npos || p_cardinalite.find("ouest") != string::npos)
 		if (p_cardinalite.length() == 5)
 			valide = true;
 

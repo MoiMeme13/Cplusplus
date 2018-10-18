@@ -28,6 +28,8 @@ public:
 	const std::string& getNumBorne() const;
 	int getSegmentRue() const;
 	std::string reqBorneFormate() const;
+	bool operator==(const Borne& p_borne) const;
+	friend std::ostream& operator<<(std::ostream& p_os,	const Borne& p_borne);
 
 private:
 	const std::string m_numBorne;

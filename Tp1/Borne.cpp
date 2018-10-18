@@ -91,3 +91,37 @@ std::string Borne::reqBorneFormate() const {
 	return stream.str();
 }
 
+/**
+ * \fn: operator==
+ * \brief: "Regarde si deux bornes sont égales"
+ * \param[in] const Borne& p_borne
+ * \return bool
+ */
+bool Borne::operator==(const Borne& p_borne) const {
+
+	return m_coteRue == p_borne.m_coteRue && m_direction == p_borne.m_direction
+			&& m_lectureMetrique == p_borne.m_lectureMetrique
+			&& m_nomTopographique == p_borne.m_nomTopographique
+			&& m_numBorne == p_borne.m_numBorne
+			&& m_segmentRue == p_borne.m_segmentRue;
+}
+
+/**
+ * \fn: operator<<
+ * \brief: "Remplacer l'opérateur de base "<<" pour une borne"
+ * \param[in] ostream& p_os, const Borne& p_borne
+ * \return ostream&
+ */
+std::ostream& operator<<(std::ostream& p_os,const Borne& p_borne){
+
+	p_os << "Numero de la borne : " << p_borne.m_numBorne << std::endl;
+	p_os << "Cote de la rue : " << p_borne.m_coteRue << std::endl;
+	p_os << "Distance mesuree : " << p_borne.m_lectureMetrique << std::endl;
+	p_os << "Segment de rue : " << p_borne.m_segmentRue << std::endl;
+	p_os << "Direction : " << p_borne.m_direction << std::endl;
+	p_os << "Nom topographique : " << p_borne.m_nomTopographique << std::endl;
+
+	return p_os;
+}
+
+
