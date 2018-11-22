@@ -24,7 +24,7 @@ public:
 
 	const std::string& ObtenirVille() const;
 	const std::string& ObtenirArroundissement() const;
-	virtual std::string reqBorneFormate(const Borne& borne) const;
+	virtual std::string reqBorneFormate() const;
 	virtual Borne* clone() const;
 
 private:

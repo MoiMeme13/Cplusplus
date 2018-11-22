@@ -29,24 +29,24 @@ BorneFontaine::BorneFontaine(const unsigned int p_identifiant,
 	INVARIANTS();
 }
 
+void BorneFontaine::verifieInvariant() const {
+	INVARIANT(m_ville == "Quebec" && m_arrondissement.empty());
+}
+
 Borne* BorneFontaine::clone() const {
 	return new BorneFontaine(*this);
 }
 
-std::string BorneFontaine::reqBorneFormate(const Borne& p_borne) const{
+std::string BorneFontaine::reqBorneFormate() const{
 	std::ostringstream stream;
 
 		stream << "Borne-fontaine" << std::endl;
 		stream << "-----------------------------------" << std::endl;
-		stream << Borne::reqBorneFormate(p_borne) << std::endl;
+		stream << Borne::reqBorneFormate() << std::endl;
 		stream << "Nom de la ville : " << ObtenirVille() << std::endl;
 		stream << "Nom de l'arrondissement : " << ObtenirArroundissement() << std::endl;
 
 		return stream.str();
-}
-
-void BorneFontaine::verifieInvariant() const {
-	INVARIANT(m_ville == "Quebec" && m_arrondissement.empty());
 }
 
 const std::string& BorneFontaine::ObtenirVille() const {

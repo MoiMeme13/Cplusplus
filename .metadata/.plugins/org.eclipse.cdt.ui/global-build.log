@@ -1,0 +1,62 @@
+16:03:47 **** Clean-only build of configuration Debug for project source ****
+make clean 
+rm -rf  ./Borne.o ./BorneFontaine.o ./BorneStationnement.o ./ContratException.o ./ValidationFormat.o  ./Borne.d ./BorneFontaine.d ./BorneStationnement.d ./ContratException.d ./ValidationFormat.d  libsource.so
+ 
+16:03:48 **** Build of configuration Debug for project source ****
+make all 
+Building file: ../Borne.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Borne.d" -MT"Borne.o" -o "Borne.o" "../Borne.cpp"
+Finished building: ../Borne.cpp
+ 
+Building file: ../BorneFontaine.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BorneFontaine.d" -MT"BorneFontaine.o" -o "BorneFontaine.o" "../BorneFontaine.cpp"
+Finished building: ../BorneFontaine.cpp
+ 
+Building file: ../BorneStationnement.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BorneStationnement.d" -MT"BorneStationnement.o" -o "BorneStationnement.o" "../BorneStationnement.cpp"
+Finished building: ../BorneStationnement.cpp
+ 
+Building file: ../ContratException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ContratException.d" -MT"ContratException.o" -o "ContratException.o" "../ContratException.cpp"
+Finished building: ../ContratException.cpp
+ 
+Building file: ../ValidationFormat.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ValidationFormat.d" -MT"ValidationFormat.o" -o "ValidationFormat.o" "../ValidationFormat.cpp"
+../ValidationFormat.cpp: In function ‘bool Util::validerLigneCVS(std::__cxx11::string&, std::ostringstream&)’:
+../ValidationFormat.cpp:81:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (positionBarreDernier != string::npos)
+                            ^
+../ValidationFormat.cpp:91:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  } while (positionBarreCourante != string::npos);
+                                 ^
+../ValidationFormat.cpp: In function ‘bool Util::valideStationnemementGEOJSON(std::__cxx11::string&, std::ostringstream&)’:
+../ValidationFormat.cpp:229:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (positionBracket == string::npos)
+                       ^
+../ValidationFormat.cpp:238:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  } while (position != string::npos);
+                    ^
+../ValidationFormat.cpp:250:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (positionBracket == string::npos)
+                       ^
+../ValidationFormat.cpp:259:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (premierGuilement != string::npos) {
+                        ^
+../ValidationFormat.cpp:275:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if (donneeExtraite.find("POINT", 0) != -1) {
+                                        ^
+../ValidationFormat.cpp:316:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  } while (premierGuilement != string::npos);
+                            ^
+Finished building: ../ValidationFormat.cpp
+ 
+Building target: libsource.so
+Invoking: GCC C++ Linker
+g++ -shared -o "libsource.so"  ./Borne.o ./BorneFontaine.o ./BorneStationnement.o ./ContratException.o ./ValidationFormat.o   
+Finished building target: libsource.so
+ 

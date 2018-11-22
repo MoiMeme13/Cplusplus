@@ -96,16 +96,16 @@ const float Borne::obtenirLongitude() const {
  * \brief: "Obtenir sous le format de chaine de caractè les informations d'une bornes."
  * \return std::string
  */
-std::string Borne::reqBorneFormate(const Borne& p_borne) const {
+std::string Borne::reqBorneFormate() const {
 
 	std::ostringstream stream;
 
-	stream << "Identifiant de la borne : " << p_borne.m_identifiant
+	stream << "Identifiant de la borne : " << m_identifiant
 			<< std::endl;
-	stream << "Direction : " << p_borne.m_direction << std::endl;
-	stream << "Nom topographique : " << p_borne.m_nomTopographique << std::endl;
-	stream << "Longitude : " << p_borne.m_longitude << std::endl;
-	stream << "Latitude : " << p_borne.m_latitude << std::endl;
+	stream << "Direction : " << m_direction << std::endl;
+	stream << "Nom topographique : " << m_nomTopographique << std::endl;
+	stream << "Longitude : " << m_longitude << std::endl;
+	stream << "Latitude : " << m_latitude << std::endl;
 
 	return stream.str();
 }

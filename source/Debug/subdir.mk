@@ -8,6 +8,7 @@ CPP_SRCS += \
 ../BorneFontaine.cpp \
 ../BorneStationnement.cpp \
 ../ContratException.cpp \
+../RegistreBorne.cpp \
 ../ValidationFormat.cpp 
 
 OBJS += \
@@ -15,6 +16,7 @@ OBJS += \
 ./BorneFontaine.o \
 ./BorneStationnement.o \
 ./ContratException.o \
+./RegistreBorne.o \
 ./ValidationFormat.o 
 
 CPP_DEPS += \
@@ -22,6 +24,7 @@ CPP_DEPS += \
 ./BorneFontaine.d \
 ./BorneStationnement.d \
 ./ContratException.d \
+./RegistreBorne.d \
 ./ValidationFormat.d 
 
 
