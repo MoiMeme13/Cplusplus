@@ -13,6 +13,16 @@
 
 namespace BornesQuebec {
 
+/**
+ * \fn: Borne::Borne
+ * \brief: "Constructeur de borne fontaine"
+ * \param[in] const unsigned int identifiant
+ * \param[in] const float p_latitude
+ * \param[in] const float p_longitude
+ * \param[in] const std::string& p_direction
+ * \param[in] const std::string& p_nomTopographique
+ * \return une Borne
+ */
 Borne::Borne(const unsigned int p_identifiant, const float p_latitude,
 		const float p_longitude, const std::string& p_direction,
 		const std::string& p_nomTopographique) :
@@ -32,6 +42,11 @@ Borne::Borne(const unsigned int p_identifiant, const float p_latitude,
 	INVARIANTS();
 }
 
+/**
+ * \fn: Borne::verifieInvariant
+ * \brief: "Verifier les invariants de la borne"
+ * \return Void
+ */
 void Borne::verifieInvariant() const {
 	INVARIANT(!m_nomTopographique.empty());
 	INVARIANT(m_identifiant >= 0);
@@ -71,11 +86,14 @@ const std::string& Borne::obtenirNomTopographique() const {
  * \param[in] const std::string&
  */
 void Borne::changerNomTopographique(const std::string& p_nomTopographique) {
+	PRECONDITION(!p_nomTopographique.empty());
 	m_nomTopographique = p_nomTopographique;
+	POSTCONDITION(p_nomTopographique == m_nomTopographique);
+	INVARIANTS();
 }
 
 /**
- * \fn: Borne::getNumBorne
+ * \fn: Borne::obtenirLatitude
  * \brief: "Obtenir la latitude
  * \return Réel
  */
@@ -123,6 +141,15 @@ const bool Borne::operator==(const Borne& p_borne) const {
 			&& m_longitude == p_borne.m_longitude
 			&& m_nomTopographique == p_borne.m_nomTopographique
 			&& m_direction == p_borne.m_direction;
+}
+
+/**
+ * \fn: Borne::~Borne
+ * \brief: "Destructeur de la classe borne"
+ * \return void
+ */
+virtual ~Borne(){
+
 }
 
 }/*Namespace BornesQuebec*/

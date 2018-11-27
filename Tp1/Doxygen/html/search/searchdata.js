@@ -1,24 +1,18 @@
 var indexSectionsWithContent =
 {
-  0: "bgprsv",
-  1: "b",
-  2: "bpv",
-  3: "grs"
+  0: "p",
+  1: "p"
 };
 
 var indexSectionNames =
 {
   0: "all",
-  1: "classes",
-  2: "files",
-  3: "functions"
+  1: "files"
 };
 
 var indexSectionLabels =
 {
   0: "All",
-  1: "Classes",
-  2: "Files",
-  3: "Functions"
+  1: "Files"
 };
 

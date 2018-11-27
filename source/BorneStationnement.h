@@ -29,7 +29,6 @@
  const std::string& ObtenirCoteRue() const ;
  virtual std::string reqBorneFormate() const;
  virtual Borne* clone() const;
- virtual ~BorneStationnement();
 
  private:
  std::string m_type;

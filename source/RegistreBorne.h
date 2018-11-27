@@ -18,8 +18,12 @@
  RegistreBorne(const std::string& p_nomRegistreBorne);
  std::string ObtenirNom() const;
  virtual ~RegistreBorne();
+ void AjouteBorne(const Borne& p_borne);
+ virtual std::string reqBorneFormate() const;
 
  private:
+ RegistreBorne(const Borne& p_borne);
+ const Borne& operator=(const Borne& p_borne);
  bool BorneEstDejaPresente(const Borne& p_borne) const;
  void verifieInvariant() const;
  std::string m_nomRegistreBorne;

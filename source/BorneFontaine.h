@@ -14,6 +14,10 @@
 
 namespace BornesQuebec {
 
+/**
+ * \class BorneFontaine
+ * \brief Cette classe crée un objet BorneFontaine
+ */
 class BorneFontaine: public virtual Borne {
 
 public:

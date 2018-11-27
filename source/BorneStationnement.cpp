@@ -11,6 +11,19 @@
 
 namespace BornesQuebec {
 
+/**
+ * \fn: BorneStationnement::BorneStationnement
+ * \brief: "Constructeur de borne de stationnement"
+ * \param[in] const unsigned int p_identifiant
+ * \param[in] const float p_latitude
+ * \param[in] const float p_longitude
+ * \param[in] const std::string& p_type
+ * \param[in] const float p_lectureMetrique
+ * \param[in] const unsigned int p_segmentRue
+ * \param[in] const unsigned short int p_numBorne
+ * \param[in] const std::string& p_coteRue
+ * \return une Borne de stationnement
+ */
 BorneStationnement::BorneStationnement(const unsigned int p_identifiant,
 		const float p_latitude, const float p_longitude,
 		const std::string& p_direction, const std::string& p_nomTopographique,
@@ -36,6 +49,11 @@ BorneStationnement::BorneStationnement(const unsigned int p_identifiant,
 	INVARIANTS();
 	}
 
+/**
+ * \fn: BorneStationnement::verifieInvariant
+ * \brief: "Verifie les invariants de la classe"
+ * \return rien
+ */
 void BorneStationnement::verifieInvariant() const {
 	INVARIANT(m_type =="stationnement" || m_type == "paiement");
 	INVARIANT(m_lectureMetrique > 0);
@@ -44,6 +62,11 @@ void BorneStationnement::verifieInvariant() const {
 	INVARIANT(Util::validerPointCardinal(m_coteRue));
 }
 
+/**
+ * \fn: BorneStationnement::reqBorneFormate
+ * \brief: "Obtenir la borne au format string formaté"
+ * \return string
+ */
 std::string BorneStationnement::reqBorneFormate() const {
 
 	std::ostringstream stream;
@@ -59,23 +82,56 @@ std::string BorneStationnement::reqBorneFormate() const {
 	return stream.str();
 }
 
+/**
+ * \fn: BorneStationnement::ObtenirType
+ * \brief: "Obtenir le type de la borne"
+ * \return string
+ */
 const std::string& BorneStationnement::ObtenirType() const{
 	return m_type;
 }
 
+/**
+ * \fn: BorneStationnement::ObtenirLectureMetrique
+ * \brief: "Obtenir la lecture métrique de la borne"
+ * \return float
+ */
 const float BorneStationnement::ObtenirLectureMetrique() const {
 	return m_lectureMetrique;
 }
+
+/**
+ * \fn: BorneStationnement::ObtenirSegmentRue
+ * \brief: "Obtenir le segment de la rue de la borne"
+ * \return unsigned int
+ */
  const unsigned int BorneStationnement::ObtenirSegmentRue() const {
 	 return m_segmentRue;
  }
+
+ /**
+  * \fn: BorneStationnement::ObtenirNumBorne
+  * \brief: "Obtenir le numéro de la borne"
+  * \return unsigned short
+  */
  const unsigned short BorneStationnement::ObtenirNumBorne() const {
 	 return m_numBorne;
  }
+
+ /**
+  * \fn: BorneStationnement::ObtenirCoteRue
+  * \brief: "Obtenir le côté de la rue de la borne de stationnement"
+  * \return std::string&
+  */
  const std::string& BorneStationnement::ObtenirCoteRue() const {
 	 return m_coteRue;
  }
 
+ /**
+  * \fn: BorneStationnement::clone
+  * \brief: "Clone la borne de stationnement"
+  * \return Borne*
+  */
  Borne* BorneStationnement::clone() const {
  	return new BorneStationnement(*this);
  }
