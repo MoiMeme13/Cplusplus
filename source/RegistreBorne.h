@@ -28,6 +28,8 @@
  void verifieInvariant() const;
  std::string m_nomRegistreBorne;
  std::vector<Borne*> m_vBorne;
+ RegistreBorne (const RegistreBorne& p_registreBorne);
+ const RegistreBorne& operator= (const RegistreBorne& p_registreBorne);
  };
 
  } /* namespace BornesQuebec */

@@ -30,8 +30,8 @@ public:
 	void changerNomTopographique(const std::string& nomTopographique);
 	virtual std::string reqBorneFormate() const=0;
 	const bool operator==(const Borne& p_borne) const;
-	virtual ~Borne();
 	virtual Borne* clone() const=0;
+	virtual ~Borne(){};
 
 private:
 	unsigned int m_identifiant;

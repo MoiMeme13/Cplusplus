@@ -14,9 +14,8 @@ using namespace BornesQuebec;
 using namespace std;
 
 int main() {
-	BorneStationnement uneBorneFontaine(1234, 1.12, 1.14, "Nord", "Borne Fontaine",
-			"Stationnement", 1.2,12,12,"Nord");
-	cout << uneBorneFontaine.reqBorneFormate();
+	BorneStationnement uneBorneStationnement(1234, 1.12, 1.14, "Nord", "Borne Fontaine","Stationnement", 1.2,12,12,"Nord");
+	cout << uneBorneStationnement.reqBorneFormate();
 	return 0;
 }
 

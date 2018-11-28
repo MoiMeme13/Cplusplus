@@ -3,7 +3,6 @@
 	<name>BorneTesteur</name>
 	<comment></comment>
 	<projects>
-		<project>source</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

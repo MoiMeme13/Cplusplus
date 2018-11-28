@@ -143,14 +143,6 @@ const bool Borne::operator==(const Borne& p_borne) const {
 			&& m_direction == p_borne.m_direction;
 }
 
-/**
- * \fn: Borne::~Borne
- * \brief: "Destructeur de la classe borne"
- * \return void
- */
-virtual ~Borne(){
-
-}
 
 }/*Namespace BornesQuebec*/
 
