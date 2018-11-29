@@ -43,7 +43,7 @@ all: BorneTesteur
 BorneTesteur: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++ -L"/home/etudiant/source/Debug" -o "BorneTesteur" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L"/home/etudiant/Cplusplus/BorneUtilisation" -o "BorneTesteur" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

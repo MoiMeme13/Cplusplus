@@ -1,0 +1,18 @@
+/**
+ *\file BorneTesteur.cpp
+ *\brief "Description"
+ *\author "Maxime Lam"
+ *\date 2018-11-27
+ */
+#include <gtest/gtest.h>
+#include "Borne.h"
+using namespace BornesQuebec;
+
+class BorneTest: public virtual  Borne
+{
+
+}
+
+
+
+

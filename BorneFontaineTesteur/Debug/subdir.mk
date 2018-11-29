@@ -17,7 +17,7 @@ CPP_DEPS += \
 BorneFontaineTesteur.o: ../BorneFontaineTesteur.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	g++ -std=c++1y -I"/home/etudiant/source" -include"/home/etudiant/BorneUtilisation/BorneFontaine.h" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"BorneFontaineTesteur.d" -o "$@" "$<"
+	g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"BorneFontaineTesteur.d" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

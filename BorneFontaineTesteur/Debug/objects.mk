@@ -4,5 +4,5 @@
 
 USER_OBJS :=
 
-LIBS := -lgtest_main -lBorneUtilisation -lgtest -lpthread
+LIBS := -lBorneUtilisation -lgtest_main -lgtest -lpthread
 

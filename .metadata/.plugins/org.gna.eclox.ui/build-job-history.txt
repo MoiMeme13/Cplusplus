@@ -1,0 +1,2 @@
+/BorneUtilisation/BorneUtilisation.doxyfile
+/BorneTesteur/BorneTesteur.doxyfile
