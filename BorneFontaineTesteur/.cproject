@@ -26,7 +26,10 @@
 								<option id="gnu.cpp.compiler.option.dialect.flags.355599195" name="Other dialect flags" superClass="gnu.cpp.compiler.option.dialect.flags" useByScannerDiscovery="true" value="-std=c++1y" valueType="string"/>
 								<option id="gnu.cpp.compiler.option.dialect.std.10325036" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.default" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.294928816" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/source}&quot;"/>
+									<listOptionValue builtIn="false" value="BorneFontaine"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.include.files.1002934483" name="Include files (-include)" superClass="gnu.cpp.compiler.option.include.files" useByScannerDiscovery="false" valueType="includeFiles">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/BorneUtilisation/BorneFontaine.h}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.145631531" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
@@ -38,11 +41,11 @@
 							<tool id="cdt.managedbuild.tool.gnu.c.linker.exe.debug.776620006" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.debug"/>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug.1393473761" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug">
 								<option id="gnu.cpp.link.option.paths.1235695428" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/source/Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/BorneUtilisation}&quot;"/>
 								</option>
 								<option id="gnu.cpp.link.option.libs.1965302805" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
 									<listOptionValue builtIn="false" value="gtest_main"/>
-									<listOptionValue builtIn="false" value="source"/>
+									<listOptionValue builtIn="false" value="BorneUtilisation"/>
 									<listOptionValue builtIn="false" value="gtest"/>
 									<listOptionValue builtIn="false" value="pthread"/>
 								</option>
@@ -52,7 +55,7 @@
 								</inputType>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.assembler.exe.debug.1118788830" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.exe.debug">
-								<option id="gnu.both.asm.option.include.paths.1333366175" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath"/>
+								<option id="gnu.both.asm.option.include.paths.1333366175" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths"/>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.839093673" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
 						</toolChain>

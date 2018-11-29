@@ -5,9 +5,9 @@
  *\date 2018-11-27
  */
 #include <gtest/gtest.h>
+#include "../BorneUtilisation/BorneStationnement.h"
 
- #include "BorneStationnement.h"
-
+ 
 TEST(BorneStationnement,ConstructeurAvecParametres){
 	BornesQuebec::BorneStationnement uneBorne(123,1.12,1.14,"Nord","MoiMeme","Stationnement",1.12,144,111,"Droite");
 	ASSERT_EQ(123,uneBorne.obtenirIdentifiant());

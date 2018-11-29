@@ -4,20 +4,38 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../BorneUtilisation.cpp 
+../Borne.cpp \
+../BorneFontaine.cpp \
+../BorneStationnement.cpp \
+../ContratException.cpp \
+../RegistreBorne.cpp \
+../Utilisation.cpp \
+../ValidationFormat.cpp 
 
 OBJS += \
-./BorneUtilisation.o 
+./Borne.o \
+./BorneFontaine.o \
+./BorneStationnement.o \
+./ContratException.o \
+./RegistreBorne.o \
+./Utilisation.o \
+./ValidationFormat.o 
 
 CPP_DEPS += \
-./BorneUtilisation.d 
+./Borne.d \
+./BorneFontaine.d \
+./BorneStationnement.d \
+./ContratException.d \
+./RegistreBorne.d \
+./Utilisation.d \
+./ValidationFormat.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
-BorneUtilisation.o: ../BorneUtilisation.cpp
+%.o: ../%.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	g++ -std=c++1y -I"/home/etudiant/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"BorneUtilisation.d" -o "$@" "$<"
+	g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

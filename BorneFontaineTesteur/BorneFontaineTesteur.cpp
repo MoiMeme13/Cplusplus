@@ -1,11 +1,12 @@
-/**
+#include <gtest/gtest.h>
+
+#include "../BorneUtilisation/BorneFontaine.h"/**
  *\file BorneTesteur.cpp
  *\brief "Description"
  *\author "Maxime Lam"
  *\date 2018-11-25
  */
-#include <gtest/gtest.h>
-#include "BorneFontaine.h"
+#include "../BorneUtilisation/BorneFontaine.h"
 
 using namespace BornesQuebec;
 

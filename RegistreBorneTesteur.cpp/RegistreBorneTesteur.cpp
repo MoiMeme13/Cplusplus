@@ -6,8 +6,9 @@
  */
 
 #include <gtest/gtest.h>
-#include "RegistreBorne.h"
-#include "BorneFontaine.h"
+
+#include "../BorneUtilisation/BorneFontaine.h"
+#include "../BorneUtilisation/RegistreBorne.h"
 
 using namespace BornesQuebec;
 
